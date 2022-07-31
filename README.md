@@ -1,14 +1,11 @@
 # CV Personales
 
-###Integrantes
+### Integrantes
 
--Erick Andrade
-
--Jhosef Rea
-
--Josue Singaña
-
--Christian Soledispa
+Erick Andrade
+Jhosef Rea
+Josue Singaña
+Christian Soledispa
 
 
 ### Pantalla Principal
