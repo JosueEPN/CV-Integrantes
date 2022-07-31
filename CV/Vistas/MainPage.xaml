@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CV.MainPage">
+
+    <StackLayout BackgroundColor="#002a5f">
+        <Image Source="https://cdn-icons-png.flaticon.com/512/4456/4456933.png"  WidthRequest="200" Margin="0,20,0,0"/>
+        <Frame BackgroundColor=" #0057c7 "
+               Margin="15">
+            <Label Text="Integrantes: "
+                   TextColor="White"
+                   FontSize="Large"                   
+                   />
+            
+        </Frame>
+        <Button Text="Erick Andrade" 
+                BackgroundColor=" #0057c7 "
+                Margin="15,0"
+                TextColor="White"
+                FontAttributes="Bold"
+                TextTransform="None"
+                FontSize="20"
+                Clicked="Button_Erick_Clicked"
+                />
+        <Button Text="Jhosef Rea" 
+                BackgroundColor=" #0057c7 "
+                Margin="15,0"
+                TextColor="White"
+                FontAttributes="Bold"
+                TextTransform="None"
+                FontSize="20"
+                Clicked="Button_Jhosef_Clicked"
+                />
+        <Button Text="Josue Singaña" 
+                BackgroundColor=" #0057c7 "
+                Margin="15,0"
+                TextColor="White"
+                FontAttributes="Bold"
+                TextTransform="None"
+                FontSize="20"
+                Clicked="Button_Josue_Clicked"    
+                
+                />
+        <Button Text="Christian Soledispa" 
+                BackgroundColor=" #0057c7 "
+                Margin="15,0"
+                TextColor="White"
+                FontAttributes="Bold"
+                TextTransform="None"
+                FontSize="20"
+                Clicked="Button_Chris_Clicked"
+                />
+    </StackLayout>
+
+</ContentPage>

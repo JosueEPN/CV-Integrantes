@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CV.Vistas.CVErick"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+    <ScrollView Margin="0,0,0,30">
+        <Grid>
+            <Grid.RowDefinitions>
+                <!--Cabecera-->
+                <RowDefinition Height="Auto" />
+                <!--Name y Correo-->
+                <RowDefinition Height="Auto" />
+                <!--Nacimiento y Nacionalidad-->
+                <RowDefinition Height="Auto" />
+                <!--Direccion y telefono-->
+                <RowDefinition Height="Auto" />
+                <!--Descripcion-->
+                <RowDefinition Height="Auto" />
+                <!--Formacion-->
+                <RowDefinition Height="Auto" />
+                <!--Experiencia-->
+                <RowDefinition Height="Auto" />
+                <!--Idiomas-->
+                <RowDefinition Height="Auto" />
+                <!--Informatica Titulo-->
+                <RowDefinition Height="Auto" />
+                <!--Informatica Barra 1-->
+                <RowDefinition Height="Auto" />
+                <!--Informatica Barra 2-->
+                <RowDefinition Height="Auto" />
+                <!--Informatica Barra 3-->
+                <RowDefinition Height="Auto" />
+                <!--Button-->
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <!--Cabecera-->
+
+            <Image Source="https://blog.freemusicprojects.com/wp-content/uploads/2019/10/music-production-banner-1-1024x512.jpg " 
+                   Aspect="AspectFill" 
+                   HeightRequest="200"
+                   />
+            <!--Name y Correo-->
+
+            <StackLayout Grid.Row="1" Padding="0,50,0,0">
+                <Label Text="Guillermo Erick Andrade Travez"
+                       Style="{StaticResource ProfileNameLabel}"
+                       FontAttributes="Bold"/>
+                <Label Text="guillermo.andrade01@epn.edu.ec"
+                       Style="{StaticResource ProfileTagLabel}"
+                       FontAttributes="Bold"/>
+            </StackLayout>
+
+            <!--Nacimiento y Nacionalidad-->
+            <Grid Grid.Row="2" Padding="10,10" BackgroundColor="#e5e5e5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Margin="0,0,10,0" >
+                    <Label Text="Fecha de nacimiento:"
+                       TextColor="Black"
+                       FontSize="15"
+                           FontAttributes="Bold"/>
+                    <Label Text="8/10/1997"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+                <StackLayout Grid.Column="1"  Margin="0,0,10,0">
+                    <Label Text="Nacionalidad:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text="Ecuatoriana"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+            </Grid>
+
+            <!--Direccion y telefono-->
+            <Grid Grid.Row="3" Padding="10,10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Margin="0,0,10,0">
+                    <Label Text="Dirreción:"
+                       TextColor="Black"
+                       FontSize="15"
+                           FontAttributes="Bold"/>
+                    <Label Text="Magdalena, alcides enriquez y leonidas batallas"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+                <StackLayout Grid.Column="1" Margin="0,0,10,0">
+                    <Label Text="Teléfono:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text="+593-961937000"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+            </Grid>
+
+            <!--Descripcion-->
+            <StackLayout Grid.Row="4" Padding="10,10" BackgroundColor="#e5e5e5" >
+                <Label Text="Descripción:"
+                       TextColor="Black"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       />
+                <Label Text="Soy un estudiante con muchas ganas de aprender y estoy aqui para ayudarte a ti y a tu empresa a salir adelante, frente a la competencia del mercado. Siempre, he creído que la disciplina tarde o temprano vence a la inteligencia. Para llevar a tu empresa al siguiente nivel y a trascender su historia. Además, me gusta lainformática y la música."
+                       FontAttributes="Bold"
+                       />
+
+            </StackLayout>
+
+            <!--Formacion Básica-->
+            <Grid Grid.Row="5" Padding="10,10" >
+                <Grid.RowDefinitions>
+                    <!--Aumentar segun la formacion basica que tengamos-->
+                    <!--Titulo-->
+                    <RowDefinition Height="Auto"/>
+                    <!--Escuela-->
+                    <RowDefinition Height="Auto"/>
+                    <!--Colegio-->
+                    <RowDefinition Height="Auto"/>
+                    <!--Universidad-->
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" >
+                    <Label Text="Formación Básica:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+                <StackLayout Grid.Row="1" BackgroundColor="#e5e5e5">
+                    <Label Text="Escuela:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text="Unidad Educativa 'Avelina Lasso de Plaza'(Finalizado)"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+                <StackLayout Grid.Row="2" >
+                    <Label Text="Colegio:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text="Unidad Educativa 'Electronico Pichincha' (Finalizado)"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+                <StackLayout Grid.Row="3" BackgroundColor="#e5e5e5" >
+                    <Label Text="Universidad:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text="Escuela Politécnica Nacional (Actualidad)"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+            </Grid>
+
+            <!--Experiencia-->
+            <Grid Grid.Row="6" Padding="10,10" >
+                <Grid.RowDefinitions>
+                    <!--Aumentar segun la experiencia que tengamos-->
+                    <!--Titulo-->
+                    <RowDefinition Height="Auto"/>
+                    <!--Proyectos personales -->
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" >
+                    <Label Text="Experiencia:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+                <StackLayout Grid.Row="1" BackgroundColor="#e5e5e5">
+                    <Label Text="Proyectos Personales" 
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text="IDENX simulator of Spotify: Aplicacion para escuchar musica realizado con firebase y react"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+
+            </Grid>
+
+            <!--Idioma-->
+            <Grid Grid.Row="7" Padding="10,10" >
+                <Grid.RowDefinitions>
+                    <!--Aumentar segun los lenguajes que tengamos-->
+                    <!--Titulo-->
+                    <RowDefinition Height="Auto"/>
+                    <!--Español-->
+                    <RowDefinition Height="Auto"/>
+                    <!--Ingles-->
+                    <RowDefinition Height="Auto"/>
+                
+
+                </Grid.RowDefinitions>
+
+                <StackLayout Grid.Row="0" >
+                    <Label Text="Idiomas:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+                <StackLayout Grid.Row="1" BackgroundColor="#e5e5e5">
+                    <Label Text="Español:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text="Nativo"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+
+                </StackLayout>
+                <StackLayout Grid.Row="2" >
+                    <Label Text="Ingles:"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                    <Label Text=" Intermedio II - Certificado de Cambridge"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+               
+
+            </Grid>
+
+            <!--Informatica Titulo-->
+            <StackLayout Grid.Row="8" >
+                <Label Text=" Informatica"
+                       TextColor="Black"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       />
+            </StackLayout>
+
+            <!--Informatica Barra 1-->
+            <Grid Grid.Row="9" Padding="10,10" BackgroundColor="#e5e5e5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Margin="0,0,10,0" >
+                    <Label Text="Java"
+                       TextColor="Black"
+                       FontSize="15"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1"  Margin="0,0,10,0">
+                    <Label Text="C++"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+            </Grid>
+
+            <!--Informatica Barra 2-->
+            <Grid Grid.Row="10" Padding="10,10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Margin="0,0,10,0" >
+                    <Label Text="Teamwork"
+                       TextColor="Black"
+                       FontSize="15"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1"  Margin="0,0,10,0">
+                    <Label Text="Python"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+            </Grid>
+
+            <!--Informatica Barra 3-->
+            <Grid Grid.Row="11" Padding="10,10" BackgroundColor="#e5e5e5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Margin="0,0,10,0" >
+                    <Label Text="Base de datos SQL/NoSQL"
+                       TextColor="Black"
+                       FontSize="15"
+                           FontAttributes="Bold"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1"  Margin="0,0,10,0">
+                    <Label Text="JavaScript/CSS/HTML/React"
+                           TextColor="Black"
+                           FontSize="15"
+                           FontAttributes="Bold"
+                           />
+                </StackLayout>
+            </Grid>
+
+            <StackLayout Grid.Row="12" >
+                <Button Text="Regresar" 
+                    CornerRadius="20"
+                    FontAttributes="Bold"
+                    BackgroundColor="  #6bacff "
+                    TextColor="White"
+                    TextTransform="None"
+                    FontSize="Large"
+                    x:Name="btnVolver"
+                    Clicked="btnVolverErick_Clicked"
+                        />
+
+            </StackLayout>
+
+
+
+
+            <!--Profile-->
+            <controls:CircleImage Source="https://i.ibb.co/6sr0B40/Erick.jpg"
+                                  Grid.Row="0" 
+                                  VerticalOptions="End"
+                                  HorizontalOptions="Center"
+                                  HeightRequest="150"
+                                  WidthRequest="150"
+                                  TranslationY="50"
+                                  BorderColor="Black"
+                                  BorderThickness="2"
+                                  />
+
+
+        </Grid>
+
+
+
+    </ScrollView>
+</ContentPage>
