@@ -1,9 +1,15 @@
 # CV Personales
+
 ###Integrantes
+
 -Erick Andrade
+
 -Jhosef Rea
+
 -Josue Singaña
+
 -Christian Soledispa
+
 
 ### Pantalla Principal
 
