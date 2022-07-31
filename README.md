@@ -2,9 +2,9 @@
 
 ### Integrantes
 
-Erick Andrade
-Jhosef Rea
-Josue Singaña
+Erick Andrade, 
+Jhosef Rea, 
+Josue Singaña, 
 Christian Soledispa
 
 
